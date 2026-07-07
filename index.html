@@ -46,11 +46,16 @@ iframe{
     <p> Aprendendo HTML</p>
     <p> By Sthefany Selhorst</p>
     </header>
+
     <main>
+      <p style="text-align: center;">
+  <a href="dicas.html" style="color: #200D7E; font-weight: bold; text-decoration: underline;">👉 Clique aqui para acessar nosso Guia Interativo de Dicas!</a>
+</p>
+
         <h3> Primeiros passos da turma compreendendo os códigos de HTML</h3>
  <img src="ima_1.png" alt="logo da turma">
  
- <hr style="border: 0; border-top: 1px solid #bd346b; margin: 30px auto; max-width: 90%; opacity: 0.3;">
+ <hr style="border: 0; border-top: 1px solid #200D7E; margin: 30px auto; max-width: 90%; opacity: 0.3;">
         
   
 <h3>📅 Resumo de Códigos Básicos: Guia Rápido de HTML</h3>
@@ -296,6 +301,114 @@ iframe{
     </div>
 
 </div> <!-- O FECHAMENTO DA CONTAINER DEVE FICAR APENAS AQUI! -->
+
+
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
+
+<!-- INÍCIO DO POST: ENTENDENDO AS DIVS -->
+<h2>📦 Desvendando a Tag &lt;div&gt;: Para que serve e como usar?</h2>
+
+<p>
+  Se você já olhou o código de um site profissional, com certeza viu a tag <code>&lt;div&gt;</code> repetida dezenas de vezes. Mas afinal de contas, o que ela faz? Hoje vamos entender como essa tag funciona e por que ela é a melhor amiga de qualquer programador web!
+</p>
+
+<h3>🤔 O que é uma &lt;div&gt;?</h3>
+<p>
+  A palavra <strong>div</strong> vem de <em>division</em> (divisão, em inglês). Pense nela simplesmente como uma <strong>caixa invisível</strong>. Sozinha, ela não faz nada: não tem cor, não tem borda e não tem texto. A função dela é puramente <strong>organizar e agrupar</strong> outros elementos dentro do seu site (como parágrafos, botões, títulos e imagens).
+</p>
+
+<h3>💡 Quando e para que usamos?</h3>
+<p>Usamos as caixas no HTML por três motivos principais:</p>
+
+<ul style="text-align: left; max-width: 650px; margin: 20px auto; line-height: 1.6;">
+  <li><strong>🎨 Para aplicar estilos juntos:</strong> Se você quer que três parágrafos tenham o mesmo fundo rosa, você coloca os três dentro de uma <code>&lt;div&gt;</code> e pinta apenas a caixa. Todos lá dentro ganham o fundo automaticamente.</li>
+  <li><strong>📐 Para organizar o Layout:</strong> Quer colocar um texto do lado de uma imagem? Ou criar um carrossel onde os vídeos ficam lado a lado? Usamos a <code>&lt;div&gt;</code> combinada com o CSS para mover e alinhar blocos inteiros pela tela.</li>
+  <li><strong>🧹 Para manter o código limpo:</strong> Ela funciona como as pastas do seu computador. Em vez de deixar todos os arquivos soltos, você organiza tudo em pastas temáticas (Caixa do Cabeçalho, Caixa de Posts, Caixa de Redes Sociais).</li>
+</ul>
+
+<h3>🛠️ Exemplo Prático no Código</h3>
+<p>
+  Veja abaixo como criamos uma caixa, colocamos conteúdo dentro dela e usamos o atributo <code>style</code> para dar uma utilidade visual a essa divisão:
+</p>
+
+<!-- Caixa com o código de exemplo para os alunos -->
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5;">
+  <span style="color: #666;">&lt;!-- Criando uma caixa com fundo cinza e borda arredondada --&gt;</span><br>
+  &lt;<span style="color: #bd346b;">div</span> <span style="color: #e36209;">style</span>=<span style="color: #032f62;">"background-color: #e0e0e0; padding: 15px; border-radius: 8px;"</span>&gt;<br>
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: #bd346b;">h3</span>&gt;Aviso Importante&lt;/<span style="color: #bd346b;">h3</span>&gt;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="color: #bd346b;">p</span>&gt;Tudo o que for digitado aqui dentro fará parte dessa caixa cinza!&lt;/<span style="color: #bd346b;">p</span>&gt;<br>
+  <br>
+  &lt;/<span style="color: #bd346b;">div</span>&gt; <span style="color: #666;"><!-- Não esqueça de fechar a caixa! --></span>
+</div>
+
+<h3>⚠️ Regra de Ouro: Sempre feche a sua Caixa!</h3>
+<p>
+  O erro mais comum no laboratório é esquecer de colocar a tag de fechamento <code>&lt;/div&gt;</code>. Se você esquecer de fechar uma caixa, o navegador vai achar que o restante de todo o seu site pertence àquele mesmo bloco, o que vai quebrar completamente o seu design e as suas cores!
+</p>
+
+<p>
+  🚀 <strong>Dica para o projeto:</strong> Sempre que abrir uma <code>&lt;div&gt;</code> no VS Code, digite imediatamente o <code>&lt;/div&gt;</code> embaixo antes mesmo de colocar o conteúdo. Isso evita muita dor de cabeça!
+</p>
+<!-- FIM DO POST -->
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
+
+<!-- INÍCIO DO POST 1: IMAGEM DE FUNDO NO CABEÇALHO -->
+<h2>📅 07 de Julho de 2026 — Como colocar uma imagem de fundo no Cabeçalho</h2>
+
+<p>
+  Até agora, vínhamos usando apenas cores sólidas (como rosa ou azul) no fundo do nosso cabeçalho. Hoje vamos aprender a deixar o design muito mais moderno trocando essa cor por uma <strong>imagem de fundo</strong>!
+</p>
+
+<h3>🛠️ Código Prático para o seu CSS</h3>
+<p>
+  Abra a sua tag <code>&lt;style&gt;</code> e modifique as propriedades do seu <code>header</code> seguindo o modelo abaixo:
+</p>
+
+<div style="background-color: #f4f4f4; border-left: 5px solid #d42d70; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5;">
+  <span style="color: #bd346b;">header</span> {<br>
+  &nbsp;&nbsp;<span style="color: #e36209;">background-image</span>: <span style="color: #032f62;">url('nome-da-sua-imagem.jpg')</span>;<br>
+  &nbsp;&nbsp;<span style="color: #e36209;">background-size</span>: <span style="color: #032f62;">cover</span>; <span style="color: #666;">/* Faz a imagem cobrir todo o espaço */</span><br>
+  &nbsp;&nbsp;<span style="color: #e36209;">background-position</span>: <span style="color: #032f62;">center</span>; <span style="color: #666;">/* Centraliza a imagem na caixa */</span><br>
+  &nbsp;&nbsp;<span style="color: #e36209;">color</span>: <span style="color: #032f62;">#FFFFFF</span>;<br>
+  &nbsp;&nbsp;<span style="color: #e36209;">text-align</span>: <span style="color: #032f62;">center</span>;<br>
+  &nbsp;&nbsp;<span style="color: #e36209;">padding</span>: <span style="color: #032f62;">40px 20px</span>; <span style="color: #666;">/* Dá espaço para a imagem aparecer bem */</span><br>
+  }
+</div>
+
+<p>
+  💡 <strong>Dica de ouro:</strong> Lembre-se de salvar o arquivo da imagem dentro da mesma pasta do seu projeto e digitar o nome exato dela (com <code>.jpg</code> ou <code>.png</code>) dentro dos parênteses do <code>url()</code>!
+</p>
+
+<hr style="border: 0; border-top: 2px solid #bd346b; margin: 40px auto; max-width: 100%;">
+
+<!-- INÍCIO DO POST 2: IMAGEM DENTRO DAS LETRAS -->
+<h2>📅 07 de Julho de 2026 — Efeito Incrível: Imagem dentro das Letras do Título</h2>
+
+<p>
+  Quer deixar o título do seu blog com um visual único e profissional? Existe um truque no CSS que faz com que uma imagem ou textura fique "recortada" <strong>exatamente no formato das letras</strong> do seu cabeçalho.
+</p>
+
+<h3>🛠️ Como aplicar no seu Título</h3>
+<p>
+  Para que esse efeito funcione bem, precisamos usar letras bem grossas (como a fonte <em>Arial Black</em>) para dar espaço para a imagem aparecer. Adicione ou modifique a tag <code>&lt;h1&gt;</code> do seu cabeçalho com o seguinte código:
+</p>
+
+<div style="background-color: #f4f4f4; border-left: 5px solid #1A3957; padding: 15px; margin: 20px auto; max-width: 650px; text-align: left; font-family: monospace; font-size: 14px; line-height: 1.5;">
+  &lt;<span style="color: #bd346b;">h1</span> <span style="color: #e36209;">style</span>=<span style="color: #032f62;">"font-family: 'Arial Black', sans-serif; font-size: 55px; background-image: url('textura-do-titulo.jpg'); background-size: cover; -webkit-background-clip: text; background-clip: text; color: transparent;"</span>&gt;<br>
+  &nbsp;&nbsp;Blog do 1° M<br>
+  &lt;/<span style="color: #bd346b;">h1</span>&gt;
+</div>
+
+<h3>🧠 Como essa mágica funciona?</h3>
+<ul style="text-align: left; max-width: 600px; margin: 0 auto 20px auto; line-height: 1.6;">
+  <li><strong><code>background-clip: text;</code>:</strong> Diz ao navegador para recortar a imagem de fundo exatamente no contorno do texto.</li>
+  <li><strong><code>color: transparent;</code>:</strong> Deixa a cor original da letra invisível, permitindo que a imagem de fundo apareça através dela.</li>
+</ul>
+
+<p>
+  🚀 <strong>Desafio da semana:</strong> Testem usar texturas de galáxia, neon, fogo ou glitter para criar efeitos surpreendentes nos títulos dos seus blogs!
+</p>
 
 </main>
    
